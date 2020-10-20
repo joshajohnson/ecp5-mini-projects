@@ -1,0 +1,8 @@
+*.bit
+*.svf
+*.json
+build/
+__pycache__/
+__init___/
+*.vcd
+__init___*/

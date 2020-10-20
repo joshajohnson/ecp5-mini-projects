@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Oct  5 11:43:24 2020
+[*]
+[dumpfile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/blink/sim/blink_tb.lxt"
+[dumpfile_mtime] "Mon Oct  5 11:42:07 2020"
+[dumpfile_size] 42587396
+[savefile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/blink/sim/gtkwaveConfig.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] -1 -1
+*-34.000000 1065250000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] blink_tb.
+[sst_width] 233
+[signals_width] 177
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+blink_tb.inst_top.CLK_16[0]
+blink_tb.inst_top.BTN_USR[0]
+blink_tb.inst_top.LED_USR[0]
+@22
+blink_tb.inst_top.ctr[23:0]
+@28
+blink_tb.inst_top.LED_ACT[0]
+@808023
+blink_tb.inst_top.LED[7:0]
+@29
+(0)blink_tb.inst_top.LED[7:0]
+(1)blink_tb.inst_top.LED[7:0]
+(2)blink_tb.inst_top.LED[7:0]
+(3)blink_tb.inst_top.LED[7:0]
+(4)blink_tb.inst_top.LED[7:0]
+(5)blink_tb.inst_top.LED[7:0]
+(6)blink_tb.inst_top.LED[7:0]
+@8029
+(7)blink_tb.inst_top.LED[7:0]
+@1009203
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0

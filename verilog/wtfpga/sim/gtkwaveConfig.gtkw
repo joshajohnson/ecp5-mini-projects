@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Oct 17 00:16:00 2020
+[*]
+[dumpfile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/wtfpga/sim/wtfpga_tb.lxt"
+[dumpfile_mtime] "Sat Oct 17 00:15:45 2020"
+[dumpfile_size] 8011263
+[savefile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/wtfpga/sim/gtkwaveConfig.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] 1847 0
+*-33.000000 2270000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] wtfpga_tb.
+[sst_width] 233
+[signals_width] 177
+[sst_expanded] 1
+[sst_vpaned_height] 328
+@28
+wtfpga_tb.inst_top.CLK_16[0]
+wtfpga_tb.PMOD_A[7:0]
+wtfpga_tb.inst_top.dip_switch[7:0]
+wtfpga_tb.inst_top.displayClock[0]
+@29
+wtfpga_tb.inst_top.seg[6:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,60 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri Oct 16 12:05:50 2020
+[*]
+[dumpfile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/clock/sim/clock_tb.lxt"
+[dumpfile_mtime] "Fri Oct 16 12:05:18 2020"
+[dumpfile_size] 13197148
+[savefile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/clock/sim/gtkwaveConfig.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] 1848 0
+*-30.000000 2491000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] clock_tb.
+[treeopen] clock_tb.inst_top.
+[sst_width] 233
+[signals_width] 233
+[sst_expanded] 1
+[sst_vpaned_height] 398
+@28
+clock_tb.inst_top.CLK_16[0]
+@22
+clock_tb.inst_top.ctr[24:0]
+clock_tb.inst_top.rgb_clk.intensity[7:0]
+@200
+-Clock
+@24
+clock_tb.inst_top.second[6:0]
+clock_tb.inst_top.minute[6:0]
+clock_tb.inst_top.hour[4:0]
+@200
+-LEDs
+@28
+clock_tb.inst_top.leds[60:0]
+clock_tb.inst_top.rgb_clk.colour_control[2:0]
+@200
+-Red
+@29
+clock_tb.inst_top.rgb_clk.en_r[0]
+@24
+clock_tb.inst_top.rgb_clk.int_r[7:0]
+@28
+clock_tb.inst_top.rgb_clk.out_r[0]
+@200
+-Green
+@28
+clock_tb.inst_top.rgb_clk.en_g[0]
+@24
+clock_tb.inst_top.rgb_clk.int_g[7:0]
+@28
+clock_tb.inst_top.rgb_clk.out_g[0]
+@200
+-Blue
+@28
+clock_tb.inst_top.rgb_clk.en_b[0]
+@24
+clock_tb.inst_top.rgb_clk.int_b[7:0]
+@28
+clock_tb.inst_top.rgb_clk.out_b[0]
+[pattern_trace] 1
+[pattern_trace] 0
