@@ -53,4 +53,4 @@ new:
 clean:
 	rm -f *.svf *.bit *.config *.json sim/$(PROJ)* *.lxt 
 
-.PHONY: prog clean dot
+.PHONY: dfu clean

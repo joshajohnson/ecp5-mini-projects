@@ -6,3 +6,4 @@ __pycache__/
 __init___/
 *.vcd
 __init___*/
+verilog/common/out/*
