@@ -1,10 +1,11 @@
 # Thanks to Konrad Beckmann for this Makefile
+VERSION:=0.2
 
 ECP5_VARIANT?=25k # 12k and 25k are same silicon, different ID code.
 PACKAGE?=CABGA256
 IDCODE?=--idcode 0x21111043 # idcode is for 12k
 SPEED?=8
-LPF_FILE?=ecp5-mini.lpf
+LPF_FILE?=ecp5-mini_r${VERSION}.lpf
 TOP_MODULE?=top
 YOSYS_OPTIONS?=
 
