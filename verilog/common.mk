@@ -39,8 +39,8 @@ dfu: $(PROJ).bit
 	dfu-util -d 1d50:614b -a 0 -R -D $(PROJ).bit
 
 simulate:
-	iverilog -Wall -o sim/$(PROJ)_tb $(PROJ)_tb.v
-	vvp sim/$(PROJ)_tb -lxt2
+	iverilog -Wall -o sim/$(PROJ)_tb.sim $(PROJ)_tb.v $(ADD_SRC)
+	vvp sim/$(PROJ)_tb.sim -lxt2
 	mv $(PROJ)_tb.lxt sim/$(PROJ)_tb.lxt
 	gtkwave sim/$(PROJ)_tb.lxt sim/gtkwaveConfig.gtkw
 

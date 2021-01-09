@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Jan  9 13:15:37 2021
+[*]
+[dumpfile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/fade/sim/fade_tb.lxt"
+[dumpfile_mtime] "Sat Jan  9 13:15:31 2021"
+[dumpfile_size] 13582808
+[savefile] "/mnt/530683E96DD773A1/Dropbox/Projects/ecp5-mini-projects/verilog/fade/sim/gtkwaveConfig.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] -1 -1
+*-31.000000 1065250000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] fade_tb.
+[sst_width] 233
+[signals_width] 177
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+fade_tb.inst_top.clk_16mhz[0]
+@24
+fade_tb.inst_top.duty_cycle[7:0]
+@29
+fade_tb.inst_top.led_usr[0]
+[pattern_trace] 1
+[pattern_trace] 0
