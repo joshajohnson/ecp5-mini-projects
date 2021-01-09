@@ -1,9 +1,16 @@
 *.bit
 *.svf
 *.json
+
+# Sim files
+*.lxt
+*.vcd
+*.sim
+verilog/common/out/*
+/sim/
+
+# nMigen stuff
 build/
 __pycache__/
 __init___/
-*.vcd
 __init___*/
-verilog/common/out/*
