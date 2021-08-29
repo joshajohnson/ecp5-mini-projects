@@ -9,6 +9,7 @@ Verilog projects are in `verilog`, and after changing into the project directory
 - `make flash` to program flash over JTAG using [ecpprog](https://github.com/gregdavill/ecpprog) and a FTDI cable.
 - `make sram` to program SRAM as above.
 - `make dfu` to flash the board over USB. Requires the [bootloader](https://github.com/joshajohnson/had2019-playground/tree/ecp5-mini) to be flashed to the board first.
+- Append `ECP5_VARIANT=25k` to the make command to build for a non 12F ECP5.
 - `make simulate` to simulate the design with iverilog using the `$(PROJ)_tb.v` simulation file.
 - `make new NAME="name"` to copy current project to new folder called `name` along with changing all in text references.
 

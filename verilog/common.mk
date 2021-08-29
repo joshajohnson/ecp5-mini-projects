@@ -1,9 +1,15 @@
 # Thanks to Konrad Beckmann for this Makefile
 VERSION:=0.2
+ECP5_VARIANT:=12k
 
-ECP5_VARIANT?=25k # 12k and 25k are same silicon, different ID code.
 PACKAGE?=CABGA256
-IDCODE?=--idcode 0x21111043 # idcode is for 12k
+
+ifeq ($(ECP5_VARIANT),25k)
+	IDCODE?=--idcode 0x41111043 #25k
+else
+	IDCODE?=--idcode 0x21111043 #12k
+endif
+
 SPEED?=8
 LPF_FILE?=ecp5-mini_r${VERSION}.lpf
 TOP_MODULE?=top
@@ -31,6 +37,7 @@ dot:
 flash: 
 	# Offset to not overwrite bootloader. Set to zero if not using DFU bootloader.
 	ecpprog $(PROJ).bit -o 0x00180000
+# 	ecpprog $(PROJ).bit
 
 sram: $(PROJ).bit
 	ecpprog $(PROJ).bit -S

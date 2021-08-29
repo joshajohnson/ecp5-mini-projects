@@ -97,8 +97,8 @@ class Platform(LatticePlatform):
     default_clk_name   = "clk16"
     default_clk_period = 1e9/16e6
 
-    def __init__(self, device="12F", toolchain="trellis", **kwargs):
-        LatticePlatform.__init__(self, "LFE5U-12F-8CABGA256", io=_io, connectors=_connectors,
+    def __init__(self, device="25F", toolchain="trellis", **kwargs):
+        LatticePlatform.__init__(self, "LFE5U-{}-8CABGA256".format(device), io=_io, connectors=_connectors,
             toolchain=toolchain, **kwargs)
 
     def create_programmer(self):
