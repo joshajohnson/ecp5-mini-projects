@@ -1,10 +1,10 @@
 # Thanks to Konrad Beckmann for this Makefile
 VERSION:=0.2
-ECP5_VARIANT:=12k
+DEVICE:=12k
 
 PACKAGE?=CABGA256
 
-ifeq ($(ECP5_VARIANT),25k)
+ifeq ($(DEVICE),25k)
 	IDCODE?=--idcode 0x41111043 #25k
 else
 	IDCODE?=--idcode 0x21111043 #12k
@@ -29,7 +29,7 @@ dot:
 	-p "show" $(PROJ).v
 
 %_out.config: %.json
-	nextpnr-ecp5 --$(ECP5_VARIANT) --json $< --lpf ../$(LPF_FILE) --package $(PACKAGE) --speed $(SPEED) --textcfg $@
+	nextpnr-ecp5 --$(DEVICE) --json $< --lpf ../$(LPF_FILE) --package $(PACKAGE) --speed $(SPEED) --textcfg $@
 
 %.bit: %_out.config
 	ecppack $(IDCODE) --compress --spimode qspi --freq 38.8 --svf $(PROJ).svf $< $@

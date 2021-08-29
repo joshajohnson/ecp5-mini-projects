@@ -1,30 +1,30 @@
+# Blink the three LEDs in a counting pattern.
+
 from nmigen import *
-from nmigen_boards.ecp5mini import *
+from nmigen_boards.ecp5_mini import *
+
 
 class Blink(Elaboratable):
-    def __init__(self):
-        self.timer = Signal(24, reset=0)
+    def __init__(self, maxperiod):
+        self.maxperiod = maxperiod
 
     def elaborate(self, platform):
+        led = platform.request("led_act")
+
         m = Module()
 
-        m.d.sync += self.timer.eq(self.timer + 1)
+        counter = Signal(range(self.maxperiod + 1))
 
-        led = platform.request("led", 0)
-        self.led_usr = led.led_usr
-        self.led_act = led.led_act
-        self.btn = platform.request("button", 0)
-
-        with m.If(self.btn):
-            m.d.comb += self.led_usr.eq(1)
+        with m.If(counter == 0):
+            m.d.sync += [
+                led.eq(~led),
+                counter.eq(self.maxperiod)
+            ]
         with m.Else():
-            m.d.comb += self.led_usr.eq(0)
-
-        m.d.comb += self.led_act.eq(self.timer[23])
+            m.d.sync += counter.eq(counter - 1)
 
         return m
 
-
 if __name__ == "__main__":
     platform = ECP5MiniPlatform()
-    platform.build(Blink(), do_program=True)
+    platform.build(Blink(10000000), do_program=True)
